@@ -1,3 +1,4 @@
+encoding='UTF-8'
 # data from GTS national AQ station CN_1329A in Wuhan
 # 1. read raw data as string
 setwd('D:/南科大/硕士/环境科学的中编程/Assignment1')
