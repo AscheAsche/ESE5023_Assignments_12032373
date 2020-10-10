@@ -1,7 +1,7 @@
 encoding='UTF-8'
-# data from GTS national AQ station CN_1329A in Wuhan
+# data from national AQ station CN_1329A in Wuhan
 # 1. read raw data as string
-setwd('D:/南科大/硕士/环境科学的中编程/Assignment1')
+setwd('D:/南科�?/硕士/环境科学的中编程/Assignment1')
 strdata_pm=read.csv('AQ_FSPMC-20180101-20200311.csv',header=F,skip=9,sep=',')
 strdata_o3=read.csv('AQ_O3-20180101-20200311.csv',header=F,skip=9,sep=',')
 
