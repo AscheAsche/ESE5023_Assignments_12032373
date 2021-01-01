@@ -1,0 +1,31 @@
+R Version:  R version 3.6.3 (2020-02-29) 
+
+Source additional_functions.R loaded.
+
+> func_mat_rotate = function(a) {
++     t(apply(a, 2, rev))
++ }
+
+> func_full = function(I) {
++     summ = sum(I)
++     full = nrow(I) * ncol(I)
++     if (summ == full) {
++         return(T)
++     }
++     else {
++    .... [TRUNCATED] 
+
+> func_indicator = function(a) {
++     if (a == missing_value) {
++         b = 0
++     }
++     else {
++         b = 1
++     }
++     return(b)
++ }
+
+> func_interp = function(X) {
++     I_vector = sfLapply(X, func_indicator)
++     I = matrix(unlist(I_vector), nrow = nrow(X))
++     mis_index = which( .... [TRUNCATED] 

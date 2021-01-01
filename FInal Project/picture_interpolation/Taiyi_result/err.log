@@ -1,0 +1,22 @@
+Loading required package: iterators
+Loading required package: snow
+
+Attaching package: ‘snow’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, clusterSplit, makeCluster, parApply,
+    parCapply, parLapply, parRapply, parSapply, splitIndices,
+    stopCluster
+
+snowfall 1.84-6.1 initialized (using snow 0.4-3): parallel execution on 40 CPUs.
+
+Warning message:
+In searchCommandline(parallel, cpus = cpus, type = type, socketHosts = socketHosts,  :
+  Unknown option on commandline: --file
+Source additional_functions.R loaded in cluster.
+
+
+Stopping cluster
+

@@ -1,0 +1,67 @@
+Sender: LSF System <lsfadmin@r13n41>
+Subject: Job 1007804: <PCA_interp2> in cluster <sustchpc> Done
+
+Job <PCA_interp2> was submitted from host <login03> by user <ese-xuhx> in cluster <sustchpc> at Sun Dec 27 15:45:10 2020.
+Job was executed on host(s) <20*r13n41>, in queue <short>, as user <ese-xuhx> in cluster <sustchpc> at Sun Dec 27 15:45:08 2020.
+                            <20*r05n26>
+</work/ese-xuhx> was used as the home directory.
+</work/ese-xuhx/R/v2> was used as the working directory.
+Started at Sun Dec 27 15:45:08 2020.
+Terminated at Sun Dec 27 15:55:47 2020.
+Results reported at Sun Dec 27 15:55:47 2020.
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+#BSUB -J PCA_interp2     ## job name
+#BSUB -q short    ## queue name
+#BSUB -n 40        ## number of total cores
+#BSUB -W 00:30    ## walltime in hh:mm
+#BSUB -e err.log  ## error log
+#BSUB -o job.log  ## job log
+
+# Load R
+module load R
+
+# Run the script and save output to result.log
+echo "--------------------"
+echo "RUN main.R at:"
+date
+Rscript main.R > result.log
+echo "End at:"
+date
+echo "--------------------"
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   951.95 sec.
+    Max Memory :                                 4368 MB
+    Average Memory :                             4246.12 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   503 MB
+    Max Processes :                              84
+    Max Threads :                                85
+    Run time :                                   638 sec.
+    Turnaround time :                            637 sec.
+
+The output (if any) follows:
+
+--------------------
+RUN main.R at:
+Sun Dec 27 15:45:08 CST 2020
+End at:
+Sun Dec 27 15:55:39 CST 2020
+--------------------
+
+
+PS:
+
+Read file <err.log> for stderr output of this job.
+
